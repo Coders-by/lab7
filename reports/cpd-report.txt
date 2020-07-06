@@ -1,0 +1,87 @@
+Found a 7 line (50 tokens) duplication in the following files: 
+Starting at line 11 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\LifeGame.java
+Starting at line 105 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\LifeGame.java
+
+	public Cell[][] init_game(Cell [][] cells) {//随机生成游戏初始状态
+		
+		int rlen = cells.length;//二维数组行数
+		int clen = cells[0].length;//二维数组列数
+
+		for (int i = 0; i < rlen ; i++) {
+	        for (int j = 0; j < clen; j++) {
+=====================================================================
+Found a 5 line (41 tokens) duplication in the following files: 
+Starting at line 131 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\GUI.java
+Starting at line 85 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\LifeGame.java
+
+		for (int i = 0; i < rlen ; i++) {
+	        for (int j = 0; j < clen; j++) {
+                //打印状态
+                if (cells[i][j].is_alive == 1)
+                {
+=====================================================================
+Found a 3 line (38 tokens) duplication in the following files: 
+Starting at line 110 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\LifeGame.java
+Starting at line 126 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\LifeGame.java
+
+		for (int i = 0; i < rlen ; i++) {
+			for (int j = 0; j < clen; j++) {
+	        	cells[i][j] = new Cell();//要写此句，否则报空指针错误
+=====================================================================
+Found a 6 line (37 tokens) duplication in the following files: 
+Starting at line 59 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\LifeGame.java
+Starting at line 83 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\LifeGame.java
+
+		String s = new String();
+		
+		for (int i = 0; i < rlen ; i++) {
+	        for (int j = 0; j < clen; j++) {
+                //打印状态
+                if (cells[i][j].is_alive == 1)
+=====================================================================
+Found a 9 line (36 tokens) duplication in the following files: 
+Starting at line 131 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\GUI.java
+Starting at line 61 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\LifeGame.java
+
+		for (int i = 0; i < rlen ; i++) {
+	        for (int j = 0; j < clen; j++) {
+	            /*
+			             每个细胞的状态由该细胞及周围 8 个细胞上一次的状态所决定； 
+			            如果一个细胞周围有 3 个细胞为生，则该细胞为生，即该细胞若原先为死则转为生， 若原先为生则保持不变； 
+			            如果一个细胞周围有 2 个细胞为生，则该细胞的生死状态保持不变； 
+			            在其它情况下，该细胞为死，即该细胞若原先为生则转为死，若原先为死则保持不变
+	            */
+	        	if (cells[i][j].around_alive == 3)
+=====================================================================
+Found a 3 line (33 tokens) duplication in the following files: 
+Starting at line 58 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\GUI.java
+Starting at line 118 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\GUI.java
+
+        for (int i = 0; i < rlen; i++) {
+            for (int j = 0; j < clen; j++) {
+                gameBoard[i][j].addActionListener(this);
+=====================================================================
+Found a 3 line (28 tokens) duplication in the following files: 
+Starting at line 130 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\GUI.java
+Starting at line 125 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\LifeGame.java
+
+	public Cell[][] init_game(Cell[][] cells, int rlen, int clen) {//方法重载，手动输入游戏初始状态
+		for (int i = 0; i < rlen ; i++) {
+			for (int j = 0; j < clen; j++) {
+=====================================================================
+Found a 4 line (27 tokens) duplication in the following files: 
+Starting at line 117 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\GUI.java
+Starting at line 59 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\LifeGame.java
+
+		get_around_alive(cells);
+		
+		for (int i = 0; i < rlen ; i++) {
+	        for (int j = 0; j < clen; j++) {
+=====================================================================
+Found a 2 line (26 tokens) duplication in the following files: 
+Starting at line 58 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\GUI.java
+Starting at line 131 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\GUI.java
+Starting at line 15 of D:\Eclipse2017\软件工程基础实验\src\生命游戏\LifeGame.java
+
+		for (int i = 0; i < rlen ; i++) {
+	        for (int j = 0; j < clen; j++) {
